@@ -61,7 +61,7 @@ if __name__ == '__main__':
     today = datetime.today()
     today_string = f'{today:%Y-%m-%d}'
     
-    download_folder = 'C:/Users/Laci/Downloads/'
+    download_folder = 'data/'
     
     a = Adattar() 
     url = a.hourly

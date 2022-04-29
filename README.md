@@ -13,7 +13,7 @@ weather
           - csv<br>
         - avg_daily<br>
           - csv<br>
-        - daily<br><br>
+        - daily<br>
           - csv<br>
         - daily_rain<br>
           - csv<br>

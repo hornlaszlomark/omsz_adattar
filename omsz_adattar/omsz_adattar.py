@@ -1,9 +1,3 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Fri Apr 29 20:01:38 2022
-
-@author: Laci
-"""
 import requests
 import urllib.request
 from bs4 import BeautifulSoup

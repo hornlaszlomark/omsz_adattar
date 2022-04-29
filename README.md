@@ -2,8 +2,9 @@
 Download weather and climate data from the public ftp of the Hungarian Meteorological Service
 
 #TODO:
+- [ ] ☁️ Weather class
+- [ ] 🛰️ Satellite class
 - [ ] add numpy docstrings
-- [ ] Weather class
 
 weather
 - weather_reports <br>

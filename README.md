@@ -8,7 +8,7 @@ Download weather and climate data from the public ftp of the Hungarian Meteorolo
 weather
 - weather_reports <br>
   - synoptic<br>
-            └── hungary<br>
+      - hungary<br>
                 ├── 10_minutes<br>
                 │   └── csv<br>
                 ├── avg_daily<br>

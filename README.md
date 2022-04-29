@@ -1,4 +1,4 @@
-# omsz_adattar
+# OMSZ Adattár
 Download weather and climate data from the public ftp of the Hungarian Meteorological Service
 
 #TODO:

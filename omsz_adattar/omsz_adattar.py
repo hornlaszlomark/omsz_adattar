@@ -14,6 +14,7 @@ class Weather():
     
     base_url = 'https://odp.met.hu/weather/weather_reports/synoptic/hungary/'
     weather_types = ['10_minutes', 'hourly', 'daily', 'avg_daily', 'gas_daily', 'monthly', 'daily_rain', 'meta']
+    download_folder = 'data/'
     
     @property
     def hourly(self):
@@ -56,13 +57,22 @@ class Weather():
         search_all_links = [link.text for link in search_all_links.find_all('a')]
         filter_target_data = list(filter(lambda x: '_20' in x, search_all_links))
         return filter_target_data
-
-def download(full_filepath:str, download_folder:str):
-    #base_url = f'https://odp.met.hu/weather/weather_reports/synoptic/hungary/{type}/csv/'
-    filename = full_filepath.split('/')[-1]
     
-    urllib.request.urlretrieve(full_filepath, download_folder + filename)
-
+    def download(self, freq='hourly'):
+        if freq=='hourly':
+            files = self.get_filenames()
+            url = self.hourly
+            
+            for file in files:
+                urllib.request.urlretrieve(url + file, download_folder + file)
+            
+#
+#def download(full_filepath:str, download_folder:str):
+#    #base_url = f'https://odp.met.hu/weather/weather_reports/synoptic/hungary/{type}/csv/'
+#    filename = full_filepath.split('/')[-1]
+#    
+#    urllib.request.urlretrieve(full_filepath, download_folder + filename)
+#
 
 
     
@@ -76,11 +86,13 @@ if __name__ == '__main__':
     weather = Weather()
     url = weather.hourly
     
-    active_files = weather.get_filenames()
+#    active_files = weather.get_filenames()
+#    
+#    for file in active_files:
+#        print(file)
+#        download(url + file, download_folder)
     
-    for file in active_files:
-        print(file)
-        download(url + file, download_folder)
+    weather.download()
         
 
         

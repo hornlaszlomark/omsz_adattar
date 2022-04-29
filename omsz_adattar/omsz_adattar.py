@@ -1,12 +1,19 @@
+# -*- coding: utf-8 -*-
+"""
+Created on Fri Apr 29 20:01:38 2022
+
+@author: Laci
+"""
 import requests
 import urllib.request
 from bs4 import BeautifulSoup
 from datetime import datetime
 
 
-class Adattar():
+class Weather():
     
     base_url = 'https://odp.met.hu/weather/weather_reports/synoptic/hungary/'
+    weather_types = ['10_minutes', 'hourly', 'daily', 'avg_daily', 'gas_daily', 'monthly', 'daily_rain', 'meta']
     
     @property
     def hourly(self):
@@ -57,16 +64,19 @@ def download(full_filepath:str, download_folder:str):
     urllib.request.urlretrieve(full_filepath, download_folder + filename)
 
 
+
+    
+
 if __name__ == '__main__':
     today = datetime.today()
     today_string = f'{today:%Y-%m-%d}'
     
     download_folder = 'data/'
     
-    a = Adattar() 
-    url = a.hourly
+    weather = Weather()
+    url = weather.hourly
     
-    active_files = a.get_filenames()
+    active_files = weather.get_filenames()
     
     for file in active_files:
         print(file)

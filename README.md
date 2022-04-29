@@ -1,7 +1,7 @@
 # OMSZ Adattár - https://odp.met.hu/
 
 🇬🇧 Download weather and climate data from the public ftp of the Hungarian Meteorological Service (source: Hungarian Meteorological Service)
-🇭🇺 Időjárás és éghajlati adatok letöltés az Országos Meteorológiai Szolgálat nyilvános ftp szerverőről (Forrás: Országos Meteorológiai Szolgálat)
+🇭🇺 Időjárás és éghajlati adatok letöltése az Országos Meteorológiai Szolgálat nyilvános ftp szerverőről (Forrás: Országos Meteorológiai Szolgálat)
 
 ```python
 from omsz_adattar import Weather

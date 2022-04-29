@@ -5,8 +5,8 @@ Download weather and climate data from the public ftp of the Hungarian Meteorolo
 - [ ] add numpy docstrings
 
 weather
-    └── weather_reports <br>
-        └── synoptic<br>
+- weather_reports <br>
+ -- synoptic<br>
             └── hungary<br>
                 ├── 10_minutes<br>
                 │   └── csv<br>

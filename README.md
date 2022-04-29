@@ -11,16 +11,16 @@ weather
       - hungary<br>
         - 10_minutes<br>
           - csv<br>
-                ├── avg_daily<br>
-                │   └── csv<br>
-                ├── daily<br><br>
-                │   └── csv<br>
-                ├── daily_rain<br>
-                │   └── csv<br>
-                ├── gas_daily<br>
-                │   └── csv<br>
-                ├── hourly<br>
-                │   └── csv<br>
-                ├── meta<br>
-                └── monthly<br>
-                    └── csv<br>
+        - avg_daily<br>
+          - csv<br>
+        - daily<br><br>
+          - csv<br>
+        - daily_rain<br>
+          - csv<br>
+        - gas_daily<br>
+          - csv<br>
+        - hourly<br>
+          - csv<br>
+        - meta<br>
+        - monthly<br>
+          - csv<br>

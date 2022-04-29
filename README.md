@@ -12,14 +12,14 @@ weather
                 │   └── csv<br>
                 ├── avg_daily<br>
                 │   └── csv<br>
-                ├── daily<br>
-                │   └── csv
-                ├── daily_rain
-                │   └── csv
-                ├── gas_daily
-                │   └── csv
-                ├── hourly
-                │   └── csv
-                ├── meta
-                └── monthly
-                    └── csv
+                ├── daily<br><br>
+                │   └── csv<br>
+                ├── daily_rain<br>
+                │   └── csv<br>
+                ├── gas_daily<br>
+                │   └── csv<br>
+                ├── hourly<br>
+                │   └── csv<br>
+                ├── meta<br>
+                └── monthly<br>
+                    └── csv<br>

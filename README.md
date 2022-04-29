@@ -3,10 +3,11 @@ Download weather and climate data from the public ftp of the Hungarian Meteorolo
 
 #TODO:
 - [ ] add numpy docstrings
+- [ ] Weather class
 
 weather
 - weather_reports <br>
- -- synoptic<br>
+ - synoptic<br>
             └── hungary<br>
                 ├── 10_minutes<br>
                 │   └── csv<br>
